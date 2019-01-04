@@ -1,0 +1,23 @@
+swagger: "2.0"
+info:
+  title: finatra-seed
+  description: finatra seed 프로젝트
+  version: 1.0.0
+host: localhost:8888
+schemes:
+  - http
+produces:
+  - application/json
+tags:
+  - name: management
+    description: 품질 관리 API
+paths:
+  /health:
+    get:
+      summary: health check
+      description: 서버 상태 응답
+      tags:
+        - management
+      responses:
+        200:
+          description: OK
